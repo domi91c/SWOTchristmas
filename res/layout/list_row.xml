@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Outline">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:lines="5"
+                android:minLines="1"
+                android:gravity="top|left"
+                android:maxLines="1"
+                android:scrollbars="none"
+                android:inputType="textMultiLine"
+
+                >
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="9">
+
+            <ImageButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/delete"
+                android:id="@+id/button"
+                android:background="@drawable/add_selector"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
